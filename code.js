@@ -2,12 +2,11 @@ var string = "Hello World";
 
 function reversed(str) {
   var tempStr = "";
-  for (var i = 0; i < str.length; i++) {
+  for (var i = str.length - 1; i >= 0; i--) {
     tempStr += str[i];
   }
   str = tempStr;
+  return str;
 }
 
-reversed(string);
-
-console.log(string);
+console.log(reversed(string));
